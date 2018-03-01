@@ -1,26 +1,323 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Tamás próba lapja</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/cv">CV</a></li>
-				<li><a href="/blog">Blog</a></li>
-			</ul>
-		</nav>
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+<title></title>
+<style>
+
+html {
+	margin:0;
+	padding:0;
+	margin-right:10%;
+	margin-left:10%;
+}
+body {
+	margin:0;
+	padding:0;
+	background:white;
+}
+#container {
+	height:100%;
+	position:relative;
+	margin:0px;
+	padding:0px;
+	z-index:0;
+}
+header {
+	position:fixed;
+	background:silver;
+	height:60px;
+	left:10%;
+	top:0;
+	padding:0px;
+	margin-right:0px;
+	width:80%;
+}
+footer {
+	position:fixed;
+	background:gray;
+	height:60px;
+	left:10%;
+	bottom:0px;
+	padding:0px;
+	margin:0px;
+	width:80%;	
+}
+#alapozo {
+	position:fixed;
+	background:brown;
+	height:100%;
+	left:10%;
+	bottom:0px;
+	padding:0px;
+	margin:0px;
+	width:80%;
+	z-index:-5;
+}
+#tetejere {
+	position:fixed;
+	top:67;
+	left:11%;
+	padding:0px;
+	margin:0px;
+	}
+	
+
+#tetejere ul, #tetejere li
+	{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	}
+#tetejere a:link
+	{
+	text-decoration:none;
+	font-family:Calibri, sant-serif;
+	color:white;
+	background:black;
+	padding-left:5px;
+	padding-right:5px;
+	border:1px solid white;
+	}
+#tetejere li a:hover
+	{
+	text-decoration:none;
+	font-family:Calibri, sant-serif;
+	color:black;
+	background:white;
+	padding-left:5px;
+	padding-right:5px;
+	border:1px solid black;
+	}
+#tetejere a:visited
+	{
+	text-decoration:none;
+	font-family:Calibri, sant-serif;
+	color:white;
+	background:black;
+	padding-left:5px;
+	padding-right:5px;
+	border:1px solid white;
+	}
+
+header p, footer p {
+	padding:10px;
+	margin:0px;
+	font-family:Calibri, sant-serif;
+	font-size:30px;
+	font-weight:bold;
+	color:#black;
+}
+
+#mainbackground {
+	position:relative;
+	float:left;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:80%;
+	height:100%;
+	background:#cc0000; <!-- Tartalom színe kevés adat esetén -->
+}
+
+#main {
+	position:relative;
+	top:0;
+	left:0;
+	margin:0;
+	padding-top:60px;
+	padding-bottom:60px;
+	padding-left:0;
+	z-index:0;
+}
+#tartalom {
+	font-family:Calibri, sant-serif;
+	font-size:15px;
+	color:#black;
+	padding:5px;
+	margin:0px;
+	background:#cc0000; <!-- Tartalom tényleges színe -->
+}
+
+#menubackground {
+	position:relative;	
+	float:left;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:20%;
+	height:100%;
+}
+
+#menucontainer {
+	position:relative;
+	top:0;
+	left:0;
+	margin:0;
+	padding-top:60px;
+	padding-bottom:60px;
+	padding-left:0;
+	z-index:-1;
+}
+#menu {
+	padding:5px;
+	margin:0px;
+	font-family:Calibri, sant-serif;
+	font-size:15px;
+	color:#black;
+}
+#menu ul, #menu il
+	{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	}
+#menu a:link
+	{
+	text-decoration:none;
+	font-family:Calibri, sant-serif;
+	color:black;
+	}
+#menu a:hover
+	{
+	text-decoration:underline;
+	font-family:Calibri, sant-serif;
+	color:black;
+	font-weight:bold;
+	}
+#menu a:visited
+	{
+	text-decoration:none;
+	font-family:Calibri, sant-serif;
+	color:black;
+	}
+
+
+</style>
+</head>
+<body>
+
+<div id="container"><p id="Eleje"></p>
+<div id="alapozo"></div>
+<div id="tetejere"><ul><li><a href="#Eleje">Tetejére</a></li></ul></div>
+<header><p>Fejléc <a href="www.bme.hu">klikkide</a></p></header>
+<footer><p>Lábléc</p></footer>
+	<div id="menubackground"><div id="menucontainer"><div id="menu">
+	<p style="font-weight:bold;margin-top:25px;">Tartalom</p>
+	<ul>
+		<li><a href="www.bme.hu">Link1</a></li>
+		<li><a href="www.uniduna.hu">Link2</a></li>
+		<li><a href="www.aranykornyp.hu">Link3</a></li>
+		<li><a href="www.nav.gov.hu">Link4</a></li>
+	</ul>
+	</div></div></div>
+	
+
+	<div id="mainbackground"><div id="main">
+		<div id="tartalom">
+		Kezdete <a href="www.bme.hu">klikkide</a> Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
+		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Vége
+		
+		</div>
+	</div>
+	</div> <!-- mainbackground -->
+
+	
+
+</div>
+</body>
+
 </html>
+
