@@ -1,323 +1,279 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+
 <title></title>
 <style>
 
 html {
-	margin:0;
-	padding:0;
-	margin-right:10%;
-	margin-left:10%;
-}
-body {
-	margin:0;
-	padding:0;
-	background:white;
-}
-#container {
-	height:100%;
-	position:relative;
-	margin:0px;
-	padding:0px;
-	z-index:0;
-}
-header {
-	position:fixed;
-	background:silver;
-	height:60px;
-	left:10%;
-	top:0;
-	padding:0px;
-	margin-right:0px;
-	width:80%;
-}
-footer {
-	position:fixed;
-	background:gray;
-	height:60px;
-	left:10%;
-	bottom:0px;
-	padding:0px;
-	margin:0px;
-	width:80%;	
-}
-#alapozo {
-	position:fixed;
-	background:brown;
-	height:100%;
-	left:10%;
-	bottom:0px;
-	padding:0px;
-	margin:0px;
-	width:80%;
-	z-index:-5;
-}
-#tetejere {
-	position:fixed;
-	top:67px;
-	left:11%;
-	padding:0px;
-	margin:0px;
+	margin:				0px;
+	padding:			0px;
+	margin-right:		10%;
+	margin-left:		10%;
 	}
-	
+body {
+	margin:				0px;
+	padding:			0px;
+	background:			white;
+	}
+#container {
+	position:			relative;
+	height:				100%;
+	margin:				0px;
+	padding:			0px;
+	z-index:			0px;
+	}
+/* --- Header/Footer --- */
+header {
+	position:			fixed;
+	background:			silver;
+	height:				60px;
+	left:				10%;
+	top:				0px;
+	padding:			0px;
+	margin:				0px;
+	width:				80%;
+	}
+footer {
+	position:			fixed;
+	background:			gray;
+	height:				60px;
+	left:				10%;
+	width:				80%;
+	bottom:				0px;
+	padding:			0px;
+	margin:				0px;
+	}
+header p, footer p {
+	padding:			10px;
+	margin:				0px;
+	font-family:		Calibri, sans-serif;
+	font-size:			30px;
+	font-weight:		bold;
+	color:				black;
+	}
+/* --- Fixed Button --- */
+#tetejere {
+	position:			fixed;
+	top:				67px;
+	left:				11%;
+	padding:			0px;
+	margin:				0px;
+	}
 
 #tetejere ul, #tetejere li
 	{
-	padding:0;
-	margin:0;
-	list-style-type:none;
+	padding:			0px;
+	margin:				0px;
+	list-style-type:	none;
 	}
 #tetejere a:link
 	{
-	text-decoration:none;
-	font-family:Calibri, sant-serif;
-	color:white;
-	background:black;
-	padding-left:5px;
-	padding-right:5px;
-	border:1px solid white;
+	text-decoration:	none;
+	font-family:		Calibri, sans-serif;
+	color:				white;
+	background:			black;
+	padding-left:		5px;
+	padding-right:		5px;
+	margin:				0px;
+	border:				1px solid white;
 	}
 #tetejere li a:hover
 	{
-	text-decoration:none;
-	font-family:Calibri, sant-serif;
-	color:black;
-	background:white;
-	padding-left:5px;
-	padding-right:5px;
-	border:1px solid black;
+	text-decoration:	none;
+	font-family:		Calibri, sans-serif;
+	color:				black;
+	background:			white;
+	padding-left:		5px;
+	padding-right:		5px;
+	margin:				0px;
+	border:				1px solid black;
 	}
 #tetejere a:visited
 	{
 	text-decoration:	none;
-	font-family:		Calibri, sant-serif;
-	color:			white;
-	background:		black;
+	font-family:		Calibri, sans-serif;
+	color:				white;
+	background:			black;
 	padding-left:		5px;
 	padding-right:		5px;
-	border:			1px solid white;
+	margin:				0px;
+	border:				1px solid white;
 	}
 
-header p, footer p {
-	padding:10px;
-	margin:0px;
-	font-family:Calibri, sant-serif;
-	font-size:30px;
-	font-weight:bold;
-	color:#black;
-}
-
-#mainbackground {
-	position:relative;
-	float:left;
-	top:0px;
-	left:0px;
-	z-index:-1;
-	width:80%;
-	height:100%;
-	background:#cc0000; <!-- Tartalom színe kevés adat esetén -->
-}
-
-#main {
-	position:relative;
-	top:0px;
-	left:0px;
-	margin:0px;
-	padding-top:60px;
-	padding-bottom:60px;
-	padding-left:0px;
-	z-index:0;
-}
-#tartalom {
-	font-family:Calibri, sant-serif;
-	font-size:15px;
-	color:black;
-	padding:5px;
-	margin:0px;
-	background:#cc0000; <!-- Tartalom tényleges színe -->
-}
-
-#menubackground {
-	position:relative;	
-	float:left;
-	top:0;
-	left:0;
-	z-index:-1;
-	width:20%;
-	height:100%;
-}
-
+/* --- Background --- */
+#backgroundmenu {
+	position:			fixed;
+	background:			magenta;
+	height:				100%;
+	left:				10%;
+	width:				80%;
+	top:				60px;
+	padding:			0px;
+	margin:				0px;
+	z-index:			-5;
+	}
+#backgroundmain {
+	position:			fixed;
+	background:			brown;
+	height:				100%;
+	right:				10%;
+	width:				60%;
+	top:				60px;
+	padding:			0px;
+	margin:				0px;
+	z-index:			-4;
+	}
+/* --- Frames --- */
+#headervirtual {
+	position:			relative;
+	float:				left;
+	width:				100%;
+	left:				0px;
+	height:				60px;
+	border:				0px solid blue;
+	}
 #menucontainer {
-	position:relative;
-	top:0;
-	left:0;
-	margin:0;
-	padding-top:60px;
-	padding-bottom:60px;
-	padding-left:0;
-	z-index:-1;
-}
+	position:			relative;
+	float:				left;
+	width:				25%;
+	border:				0px solid green;
+	}
+#maincontainer {
+	position:			relative;
+	float:				left;
+	width:				75%;
+	border:				0px solid green
+	}
+#main {
+	position:			relative;
+	float:				left;
+	margin:				0px;
+	padding:			5px;
+	padding-bottom:		65px;
+	}
 #menu {
-	padding:5px;
-	margin:0px;
-	font-family:Calibri, sant-serif;
-	font-size:15px;
-	color:black;
-}
+	top:				0px;
+	left:				0px;
+	padding:			5px;
+	padding-top:		15px;
+	font-family:		Calibri, sans-serif;
+	font-size:			15px;
+	color:				black;
+	}
+/* --- Menu Display --- */
 #menu ul, #menu il
 	{
-	padding:0;
-	margin:0;
-	list-style-type:none;
+	padding:			0px;
+	margin:				0px;
+	list-style-type:	none;
 	}
 #menu a:link
 	{
-	text-decoration:none;
-	font-family:Calibri, sant-serif;
-	color:black;
+	text-decoration:	none;
+	font-family:		Calibri, sans-serif;
+	color:				black;
 	}
 #menu a:hover
 	{
-	text-decoration:underline;
-	font-family:Calibri, sant-serif;
-	color:black;
-	font-weight:bold;
+	text-decoration:	underline;
+	font-family:		Calibri, sans-serif;
+	color:				black;
+	font-weight:		bold;
 	}
 #menu a:visited
 	{
-	text-decoration:none;
-	font-family:Calibri, sant-serif;
-	color:black;
+	text-decoration:	none;
+	font-family:		Calibri, sans-serif;
+	color:				black;
 	}
-
+#menu p {
+	font-weight:bold;
+	}
 
 </style>
 </head>
 <body>
 
-<div id="container"><p id="Eleje"></p>
-<div id="alapozo"></div>
-<div id="tetejere"><ul><li><a href="#Eleje">Tetejére</a></li></ul></div>
-<header><p>Fejléc <a href="www.bme.hu">klikkide</a></p></header>
-<footer><p>Lábléc</p></footer>
-	<div id="menubackground"><div id="menucontainer"><div id="menu">
-	<p style="font-weight:bold;margin-top:25px;">Tartalom</p>
+<div id="container"><p id="Eleje" style="margin:0px;padding:0px;"></p>
+<div id="headervirtual">&nbsp;</div>
+<div id="backgroundmenu"></div>
+<div id="backgroundmain"></div>
+
+
+	
+	<div id="menucontainer">
+	<div id="menu">
+	<p>Tartalom</p>
 	<ul>
 		<li><a href="www.bme.hu">Link1</a></li>
 		<li><a href="www.uniduna.hu">Link2</a></li>
 		<li><a href="www.aranykornyp.hu">Link3</a></li>
 		<li><a href="www.nav.gov.hu">Link4</a></li>
 	</ul>
-	</div></div></div>
+	</div></div>
+
+
+	<div id="maincontainer">
+	<div id="main">
+	<p style="font-weight:bold;margin-top:20px;">Kezdete</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Ez a szöveg lesz itt</p>
+	<p style="font-weight:bold;margin-top:20px;">Vege</p>
+	</div></div>	
 	
-
-	<div id="mainbackground"><div id="main">
-		<div id="tartalom">
-		Kezdete <a href="www.bme.hu">klikkide</a> Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom
-		Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Tartalom Vége
-		
-		</div>
-	</div>
-	</div> <!-- mainbackground -->
-
 	
+	<header><p>Fejléc <a href="www.bme.hu">klikkide</a></p></header>
+	<div id="tetejere"><ul><li><a href="#Eleje">Tetejére</a></li></ul></div>
+	<footer><p>Lábléc</p></footer>
 
 </div>
 </body>
 
 </html>
-
